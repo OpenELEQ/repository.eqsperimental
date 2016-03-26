@@ -1,9 +1,8 @@
 v1.1.0-dev-a
 [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]
 - Changed all userdata-paths to profile-paths for better compatibility with multi-profile setups.
-- Added extended info and super favourites as dependency for easier install.
 
-v1.1.0-dev-a
+v1.1.0-dev
 - Testing trakt support
 [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]
 - Added default url pointing to my players repo which includes official & midraal's players

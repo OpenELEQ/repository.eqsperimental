@@ -2,8 +2,6 @@
 <addon id="plugin.program.super.favourites" name="Super Favourites" version="1.0.49.1" provider-name="spoyser">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
-		<import addon="plugin.video.meta" />
-		<import addon="script.extendedinfo" />
 		<import addon="script.module.metahandler" optional="true" />
 	</requires>
 	<extension point="xbmc.python.pluginsource" library="default.py">
