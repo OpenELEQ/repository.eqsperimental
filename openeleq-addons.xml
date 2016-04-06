@@ -28,9 +28,9 @@
 	</extension>
 </addon>
 
-<addon id="plugin.video.meta" name="Meta" version="1.1.0-dev-d" provider-name="MetaTeam">
+<addon id="plugin.video.meta" name="Meta" version="1.1.4-dev-a" provider-name="MetaTeam, mods/tweaks by [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]">
   <requires>
-    <import addon="xbmc.python" version="2.20.0"/>
+    <import addon="xbmc.python" version="2.19.0"/>
     <import addon="script.module.requests"/>
     <import addon="script.module.futures" version="2.2.0"/>
   </requires>
@@ -45,7 +45,7 @@
   <extension point="kodi.context.item" library="context_playable.py">
     <provides>executable</provides>
       <item>
-        <label>$ADDON[plugin.video.meta 31002]</label>
+        <label>$ADDON[plugin.video.meta 30602]</label>
         <visible>!System.HasAddon(context.meta) + [StringCompare(ListItem.dbtype,movie) | StringCompare(ListItem.dbtype,episode)] + SubString(ListItem.FileNameAndPath, plugin.video.meta)</visible>
       </item>
   </extension>
@@ -53,7 +53,7 @@
   <extension point="kodi.context.item" library="context_tvshow.py">
     <provides>executable</provides>
       <item>
-        <label>$ADDON[plugin.video.meta 31022]</label>
+        <label>$ADDON[plugin.video.meta 30622]</label>
         <visible>StringCompare(ListItem.dbtype,tvshow) + SubString(ListItem.Path, plugin.video.meta)</visible>
       </item>
   </extension>
@@ -61,8 +61,8 @@
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
     <language></language>
-    <summary>TMDB and TVDB media listing</summary>
-    <description>Browse TMDB and TVDB media</description>
+    <summary>TMDB and TVDB media listing with Trakt suppport</summary>
+    <description>Browse TMDB and TVDB media with Trakt suppport</description>
     <supportedcontent>
       <content>movies</content>
       <content>tvshows</content>
@@ -99,7 +99,7 @@
 	</extension>
 </addon>
 
-<addon id="script.extendedinfo" name="ExtendedInfo Script Mod" version="4.7.4-dev-a" provider-name="Original work by phil65, modded by [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]">
+<addon id="script.extendedinfo" name="ExtendedInfo Script Mod" version="4.7.4-dev-b" provider-name="Original work by phil65, modded by [COLOR FF8ABEE2]Open[/COLOR][COLOR FF757677]ELEQ[/COLOR]">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
 		<import addon="script.module.pil" version="1.1.7"/>
@@ -116,19 +116,19 @@
 	<extension point="xbmc.python.pluginsource"     library="plugin.py">
 		<provides>video</provides>
 	</extension>
-	<extension point="kodi.context.item"            library="addon.py">
+	<!--<extension point="kodi.context.item"            library="addon.py">
 		<provides>executable</provides>
 			<item>
 				<label>Alternate Play</label>
 				<visible>StringCompare(ListItem.FileExtension,strm) + [StringCompare(ListItem.dbtype,movie) | StringCompare(ListItem.dbtype,episode)]</visible>
 			</item>
-	</extension>
+	</extension>-->
 	<extension point="xbmc.addon.metadata">
 		<language/>
 		<summary lang="en">ExtendedInfo Script Mod</summary>
 		<description lang="en">This script offers various possibilities to display online content inside skins as well as a complete MovieDB browser including info dialogs for various media types. Used services are themoviedb.org, theaudiodb.org, rottentomatoes.com, Trakt.TV, omdbapi.com and a lot more. Needs skin implementation for lot of functions.</description>
 		<summary lang="nl">ExtendedInfo Script Mod</summary>
-		<description lang="nl">Dit script biedt meerdere mogelijkheded om online content weer te geven in skins en bevat ook een complete MovieDB browser inclusief info dialogen voor verscheidene media types. Gebruikte diensten zijn themoviedb.org, theaudiodb.org, rottentomatoes.com, Trakt.TV, omdbapi.com en nog veel meer. Vereist skin implementatie voor de meeste functies.</description>
+		<description lang="nl">Dit script biedt meerdere mogelijkheden om online content weer te geven in skins en bevat ook een complete MovieDB browser inclusief info dialogen voor verscheidene media types. Gebruikte diensten zijn themoviedb.org, theaudiodb.org, rottentomatoes.com, Trakt.TV, omdbapi.com en nog veel meer. Vereist skin implementatie voor de meeste functies.</description>
 		<platform>all</platform>
 		<license>GNU GENERAL PUBLIC LICENSE Version 2, June 1991</license>
 		<forum>http://www.noobsandnerds.com/forums/index.php?topic=7393.0</forum>
